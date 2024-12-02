@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# Movie List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+**Movie List** es una aplicación web diseñada para listar y proporcionar detalles sobre diversas películas. Desarrollada utilizando React y TypeScript, esta aplicación permite a los usuarios explorar diferentes películas, ver descripciones detalladas, y acceder a trailers directamente desde la aplicación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- Listado de películas con detalles como título, género, año, duración, descripción, elenco y director.
+- Visualización de imágenes de las películas.
+- Enlace directo a los trailers de las películas en YouTube.
+- Animaciones y diseño interactivo para una mejor experiencia de usuario.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Una biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript**: Un superconjunto de JavaScript que añade tipado estático.
+- **Styled-Components**: Biblioteca para escribir CSS en JavaScript, permitiendo estilos dinámicos.
+- **Flowbite-React**: Componentes UI reutilizables.
+- **React Icons**: Iconos SVG para React.
+- **CSS Grid**: Layout utilizado para disposición responsiva de tarjetas de películas.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalación
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clona el repositorio:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   [git clone https://github.com/tu_usuario/movie-list.git](https://github.com/brayan-V/movie-app)
+   ```
+2. Navega a la carpeta del proyecto:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   cd movie-list
+   ```
+3. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+## Uso
+1. Inicia la aplicación:
+
+   ```bash
+   npm run dev
+   ```
+2. Abre tu navegador y ve a http://localhost:5173 o el que genera la ejecución del comando anterior para ver la aplicación en funcionamiento.
+## Contribución
+  ¡Contribuciones son bienvenidas! Si tienes sugerencias de mejoras, no dudes en abrir un issue o un pull request.
+## Autor
+  Desarrollado por [Brayan Velasco](https://github.com/brayan-V).
+##
+  ¡Gracias por usar Movie List! Espero que disfrutes explorando y descubriendo nuevas películas. 🎬🍿
+
+
